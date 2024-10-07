@@ -18,5 +18,16 @@ public class Main
         System.out.println(Math.random() < 0.05);  
         g.simulateOneDay(12);
         System.out.println(g.getCurrentFood());
+        Feeder h = new Feeder(1000);
+        h.simulateOneDay(22);
+        System.out.println(h.getCurrentFood());
+        Feeder i = new Feeder(100);
+        i.simulateOneDay(5);
+        System.out.println(i);
+        Feeder j = new Feeder(2400);
+        System.out.println(j.simulateManyDays(10, 4));
+        System.out.println("test case 1");
+        System.out.println(j);
+        System.out.println(j.simulateManyDays(10, 4));
     }
 }
